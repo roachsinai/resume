@@ -1,0 +1,99 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{郝志强}
+
+% {age}{mobilephone}{E-mail}
+% be careful of _ in emaill address
+\contactInfo{roachsinai@foxmail.com}{(+86) 17600970842}{http://roachsinai.github.io}
+% {mobilephone}{E-mail}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{大连理工大学}, 辽宁}{2014 -- 2017}
+\textit{在读硕士研究生}\ 计算机应用技术
+\datedsubsection{\textbf{河南大学}, 河南}{2010 -- 2014}
+\textit{学士}\ 信息管理与信息系统
+
+\section{\faCogs\ 专业技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 熟悉机器学习中常用的分类、特征选择、回归算法，及其算法原理
+  \item 有较强的数据分析和处理能力，有实际数据的预处理、特征选择、分类预测经验
+  \item 熟练使用 C++，文档帮助下可以使用 Python、Java 进行开发
+  \item 可以在 Linux 发行版上进行编程实现
+\end{itemize}
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{LC-MS时间序列数据处理系统} }{2015.01 -- 2015.09}
+\role{项目描述}{项目使用C++语言实现。该系统适用于处理LC-MS（液相色谱质谱联用）时间序列组学数据，主要功能包括数据预处理、特征选择、网络图分析、分类、聚类和图形化展示。数据预处理提供了缺失值处理、异常值处理、QC 样本处理等功能。特征选择模块提供单变量的Filter方法，包括 T-Test、ANOVA、SAM、FoldChange；多变量的特征选择方法，包括 SVM-RFE、Random Forest特征选择。统计分析与图形化显示模块提供了数据的均值方差图、含量趋势图、PCA 图。}
+\emph{责任描述}
+\begin{itemize}
+  \item 负责数据预处理功、部分特征选择和聚类算法
+  \item 实现自己提出的一种挑选疾病发生发展标志物的网络图分析方法
+\end{itemize}
+
+\datedsubsection{\textbf{大规模代谢组学数据校正方法研究}}{2015.03 -- 2015.08}
+\role{项目描述}{项目针对大规模代谢组学数据分析时样品多、分析时间长，使得不同批次代谢数据难以整合的问题进行研究。最终给出代谢组学数据校正方法，从而实现不同批次数据的整合。}
+\role{合作单位}{中国科学院大连化学物理研究所}
+\emph{责任描述}
+\begin{itemize}
+  \item 提出并实现过失误差的校正方法
+  \item 实现合作单位提出的系统误差校正方法
+\end{itemize}
+% \role{项目收获}{对于一个未接触过的待解决问题，需要充分了解问题的背景。这在我们对获得的数据进行研究分析时会有很大帮助，从而快速建立正确的模型来解决这个问题。}
+
+\datedsubsection{\textbf{孕妇孕期糖尿病检测的研究}}{2016.05 -- 2016.07}
+\role{项目描述}{妊娠期糖尿病是指孕前没有糖尿病而在孕期出现高血糖水平的状态，这将增加孕妇流产、难产以及患孕期高血压的风险。项目通过机器学习的方法对孕妇孕期是否患病进行学习，提高识别孕妇是否患病的准确率。}
+%从而可以对患病孕妇采取相应措施降低母子健康风险。
+\emph{责任描述}
+\begin{itemize}
+  \item 对获得的数据进行相应预处理
+  \item 参与组内讨论，提出建设性意见并优化改进自己的分类器
+\end{itemize}
+
+\section{\faUniversity\ 学术活动}
+\begin{enumerate}[parsep=0.5ex]
+  \item Zhao Y, Hao Z, Zhao C, et al. A Novel Strategy for Large-Scale Metabolomics Study by Calibrating Gross and Systematic Errors in Gas Chromatography–Mass Spectrometry[J]. Analytical chemistry, 2016, 88(4): 2234-2242.SCI检索，影响因子：5.886.
+  \item 《一种代谢组学数据随机误差的筛选和校正方法》专利申请已被受理，申请号: 210510755515.7
+\end{enumerate}
+
+\section{\faInfo\ 其他信息}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 出生年月: 1993.03
+  \item 语\hspace{2em}言: 英语 - CET6
+  \item 技术博客: http://roachsinai.github.io
+  \item 通讯地址: 北京市海淀区温泉镇环保嘉苑13号院1号楼8单元 
+\end{itemize}
+
+\section{\faTags\ 自我评价}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 逻辑清晰、自学能力较强
+  \item 数学和算法基础扎实
+  \item 喜欢接触新事物
+  \item 对习得的知识会进行总结
+  \item 与团队成员交流融洽
+  \item 希望可以在计算机行业中学到更多的知识
+\end{itemize}
+
+\section{\faHeartO\ 致谢}
+感谢您阅读我的简历！
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
